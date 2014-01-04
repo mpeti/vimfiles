@@ -1,7 +1,8 @@
 " Pathogen-nek sükséges beállíások {
 " :call pathogen#helptags() "frissíti a help fájl indexet
   filetype off " 
-  call pathogen#runtime_append_all_bundles() 
+  "call pathogen#runtime_append_all_bundles() 
+  call pathogen#incubate() 
   filetype plugin indent on
 " }
 
@@ -51,18 +52,19 @@ endif
 " }
 
 " Vim UI {
-set gfn=DejaVu_Sans_Mono:h9:cEASTEUROPE
+" set gfn=DejaVu_Sans_Mono:h9:cEASTEUROPE
 
 " columns	width of the display
- 	set co=246
+" set co=246
 " lines	number of lines in the display
- 	set lines=70
+" set lines=70
 " window	number of lines to scroll for CTRL-F and CTRL-B
- 	set window=69
+" set window=69
 " toolbar off
 set guioptions-=T
 
 colorscheme moria
+" colorscheme solarized
 "set cursorcolumn " highlight the current column
 set cursorline " highlight current line
 set laststatus=2 " always show the status line
